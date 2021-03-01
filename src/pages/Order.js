@@ -1,4 +1,4 @@
-import { data } from "autoprefixer";
+/* eslint-disable */
 import React, { useEffect, useState, useContext } from "react";
 import { FetchContext } from "../context/FetchContext";
 import InventoryItemForm from "./../components/InventoryItemFormEdit";
@@ -23,20 +23,6 @@ export default function Order(props) {
       setErrorMessage(data.message);
     }
   };
-
-//   const onSubmit = async (values, resetForm) => {
-//     try {
-//       const { data } = await fetchContext.authAxios.put("inventory", values);
-//       setInventory([...inventory, data.inventoryItem]);
-//       resetForm();
-//       setSuccessMessage(data.message);
-//       setErrorMessage(null);
-//     } catch (err) {
-//       const { data } = err.response;
-//       setSuccessMessage(null);
-//       setErrorMessage(data.message);
-//     }
-//   };
 
   const onSubmit = async () => {
     try {
